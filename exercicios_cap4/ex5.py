@@ -13,4 +13,4 @@ print(f"Cada número da matriz e quantas vezes se repete {numpy.unique(mtz, retu
 
 valores, repeticoes = numpy.unique(mtz, return_counts=True)
 
-print(f"Valores que se repetem {valores[repeticoes == 2]}")
+print(f"Valores que se repetem {valores[repeticoes >= 2]}")
