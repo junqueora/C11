@@ -3,7 +3,7 @@ import numpy
 ds = numpy.loadtxt('space.csv', delimiter=';', dtype=str, encoding='utf-8')
 
 ds_mission_status = ds[1:, 7]
-print(f"Taxa de sucesso nas missões: {(numpy.count_nonzero(ds_mission_status == 'Success') / ds_mission_status.size) * 100}%")
+print(f"Taxa de sucesso nas missões: {(ds_mission_status[ds_mission_status == 'Success'].size / ds_mission_status.size) * 100}%")
 
 ds_cost = ds[1:, 6].astype(float)
 print(f"Custo médio das missões com valores divulgados: U$ {ds_cost[ds_cost != 0].mean()} M")
