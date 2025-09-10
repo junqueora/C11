@@ -50,6 +50,8 @@ print(mtz3.sum(axis=1)[0]) #[0] faz o retorno ser o da primeira linha
 numpy.random.seed(10)
 arr5 = numpy.random.randint(1,101,9) #para gerar um vetor de ints aleatórios
 print(arr5)
+arr_teste = numpy.random.normal(size=[10,2], loc=50, scale=10) #realiza distribuição gaussiana
+print(arr_teste)
 
 arr6 = numpy.random.randint(1,11,10)
 print(arr6)
