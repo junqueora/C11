@@ -17,7 +17,7 @@ print(population_percent)
 ds.insert(3, 'Population Percentage', population_percent * 100) #adicionando coluna em um local específico
 print(ds)
 
-ds.to_csv('paises2.csv', sep=';') #criando novo dataset csv
+ds.to_csv('paises2.csv', sep=';', index=False) #criando novo dataset csv
 
 #group by
 group_region = ds.groupby('Region')
