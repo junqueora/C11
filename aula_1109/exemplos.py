@@ -24,6 +24,7 @@ group_region = ds.groupby('Region')
 print(group_region.count()['Country']) #conta o número de países em cada região
 print(group_region.sum()['Country']) #lança os países de cada região (não soma porque não tem como somar strings)
 print(group_region.sum()['Population']) #soma a população de cada região
+print(group_region.sum()['Population Percentage'])
 
 # funções no python
 def ten_percent(x): #função que tira 10% de algo
