@@ -30,4 +30,4 @@ ds_color = ds[1:, 8]
 ds_season = ds[1:, 9]
 color, n_purchases = numpy.unique(ds_color[ds_season == "Summer"], return_counts=True)
 
-print(f"Q5: A cor mais vendida no verão foi {color[n_purchases.argmax()]}")
+print(f"Q5: A cor mais vendida no verão foi {color[n_purchases.argmax()]}") #deu certo!
